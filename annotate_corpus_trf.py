@@ -1,6 +1,13 @@
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)  # Ignorar advertencias de PyTorch
+
 import os
+import time
 import spacy
 from spacy.tokens import Doc, Span
+
+# Iniciar el contador de tiempo
+start_time = time.time()
 
 # Cargar el modelo transformer de spaCy
 print("Cargando el modelo 'en_core_web_trf'...")
@@ -82,4 +89,8 @@ for i, filename in enumerate(archivos, 1):
 
     print(f"Archivo {filename} procesado y guardado en {output_path}\n")
 
-print("Procesamiento y anotación completados. Los textos anotados se han guardado en:", output_dir)
+# Mostrar el tiempo total de ejecución
+end_time = time.time()
+total_time = end_time - start_time
+print(f"Procesamiento completado en {total_time:.2f} segundos.")
+print("Los textos anotados se han guardado en:", output_dir)
