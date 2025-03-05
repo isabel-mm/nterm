@@ -21,7 +21,7 @@ output_dir = "annotated_corpus_trf"  # Directorio para guardar los textos anotad
 
 # Crear el directorio de salida si no existe
 if not os.path.exists(output_dir):
-    print(f"Creando directorio de salida: {output_dir}")
+    print(f"¡A ver! Creando directorio de salida: {output_dir}")
     os.makedirs(output_dir)
     print("Directorio creado correctamente.\n")
 
@@ -50,7 +50,12 @@ def anotar_terminos(texto, terminos, etiqueta="TERMINO"):
             start += 1  # Continuar buscando después de esta ocurrencia
 
     # Añadir las nuevas entidades al documento
-    doc.ents = list(doc.ents) + nuevas_entidades
+    try:
+        doc.ents = list(doc.ents) + nuevas_entidades
+    except ValueError as e:
+        print(f"Error al añadir entidades: {e}")
+        # Si hay un error, omitir las entidades problemáticas
+        doc.ents = list(doc.ents)
     return doc
 
 # Procesar cada archivo en el corpus
