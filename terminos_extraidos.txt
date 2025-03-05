@@ -1,0 +1,262 @@
+cluster analysis
+element of vector
+set of variable
+field of corpus
+vector space
+frequency distribution
+co occurrence of word
+operating system
+effect size
+number of text
+number of occurrence
+language teaching
+language sample
+dispersion measure
+google books
+meaning of word
+function word
+use of language
+dimensionality reduction
+text type
+corpus word
+line of code
+corpus study
+corpus linguistics
+search result
+mann whitney
+number of character
+text corpus
+part of speech
+need use
+head tail
+language datum
+discourse domain
+collector vector
+kind of analysis
+corpus contain
+datum table
+corpus linguist
+application of corpus
+use of corpora
+annotation scheme
+user of corpus
+word phrase
+language user
+word tag
+search word
+representative study
+character class
+code file
+use of corpus
+frequency of occurrence
+search expression
+research corpus
+token ratio
+study of language
+word character
+translation study
+multi word
+corpus size
+pseudo title
+corpora contain
+word boundary
+chi square
+corpus annotation
+discourse marker
+multimodal corpus
+use of word
+corpus contains
+find word
+end of chapter
+punctuation mark
+tool method
+learner corpora
+effect size measure
+data space
+corpus analysis
+case study
+text length
+lob corpus
+subordinate clause
+research project
+speech writing
+researcher use
+combination of word
+collection of text
+type of corpora
+k means
+concordance line
+frequency list
+association measure
+corpus type
+meta analysis
+learner corpus
+research hypothesis
+corpus building
+input vector
+speech community
+measure of dispersion
+cluster structure
+speech act
+number of time
+sample of language
+corpus compiler
+word frequency list
+datum analysis
+corpus design
+register analysis
+web page
+corpus text
+sequence of word
+load corpus file
+word class
+correspondence analysis
+corpus corpus
+language processing
+time period
+stop word
+type of analysis
+text text
+character vector
+style sheet
+analysis of corpus
+man woman
+meta information
+word length
+target language
+basis vector
+datum frame
+test hypothesis
+connection vector
+save file
+degree of freedom
+pos tagging
+definition of corpus
+word order
+language corpora
+occurrence of word
+hypothesis generation
+parallel corpora
+speech tagging
+variety of english
+word frequency
+search engine
+translation equivalent
+type of corpus
+character string
+datum matrix
+data structure
+state of art
+type of speech
+datum corpus
+register study
+size of corpus
+corpus query
+function need
+word text
+frequency count
+software program
+study use
+datum structure
+corpus compilation
+type of text
+frequency table
+language corpus
+regression model
+target domain
+corpus datum
+word occurrence
+language documentation
+correlation coefficient
+corpora corpus
+recommendation study exploration
+text category
+word list
+pos tag
+log odd
+multi word unit
+pearson correlation
+data set
+form of verb
+language variety
+row vector
+word occur
+mean score
+press reportage
+language technology
+word word
+corpus user
+type of datum
+second language acquisition
+p value
+word family
+variety of language
+person pronoun
+exercise box
+r code
+dialect study
+newspaper article
+unit of analysis
+default setting
+word token
+analysis of datum
+type token ratio
+keyword analysis
+language change
+frequency of word
+effect model
+research design
+data point
+response variable
+type of information
+corpus tool
+male speaker
+word sequence
+corpus research
+word type
+data frame
+sample size
+difference group
+matter of fact
+word corpus
+language acquisition
+reference corpus
+text file
+speaker writer
+vice versa
+corpus file
+use corpus
+row column
+type token
+basis function
+statistical description analysis
+language variation
+large amount of datum
+ice gb
+datum point
+portion of corpus
+data matrix
+word form
+period of time
+mother tongue
+frequency breakdown
+web corpus
+language use
+type of annotation
+log likelihood
+natural language processing
+classification tree
+line break
+confidence interval
+content word
+actual script rstudio
+number of word
+test statistic
+register variation
+number of token
+co occurrence
+conditional inference tree
+number of case
+list of word
+thing need
+sub corpus
