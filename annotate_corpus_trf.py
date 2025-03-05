@@ -29,13 +29,21 @@ def anotar_terminos(texto, terminos, etiqueta="TERMINO"):
     doc = nlp(texto)
     nuevas_entidades = []
     for term in terminos:
-        start = texto.lower().find(term.lower())  # Buscar el término (insensible a mayúsculas)
-        if start != -1:  # Si se encuentra el término
+        start = 0
+        while True:
+            start = texto.lower().find(term.lower(), start)  # Buscar el término (insensible a mayúsculas)
+            if start == -1:  # Si no se encuentra más ocurrencias
+                break
             end = start + len(term)
             span = doc.char_span(start, end, label=etiqueta)  # Crear un Span
             if span is not None:
-                nuevas_entidades.append(span)
-    doc.ents = list(doc.ents) + nuevas_entidades  # Añadir las nuevas entidades
+                # Verificar si el span se superpone con alguna entidad ya existente
+                if not any(span.start < ent.end and span.end > ent.start for ent in nuevas_entidades):
+                    nuevas_entidades.append(span)
+            start += 1  # Continuar buscando después de esta ocurrencia
+
+    # Añadir las nuevas entidades al documento
+    doc.ents = list(doc.ents) + nuevas_entidades
     return doc
 
 # Procesar cada archivo en el corpus
@@ -55,7 +63,11 @@ for i, filename in enumerate(archivos, 1):
     texto = " ".join(texto.split())
 
     # Anotar términos
-    doc = anotar_terminos(texto, terminos)
+    try:
+        doc = anotar_terminos(texto, terminos)
+    except Exception as e:
+        print(f"Error al procesar el archivo {filename}: {e}")
+        continue
 
     # Guardar el texto anotado en formato spaCy
     output_path = os.path.join(output_dir, filename)
