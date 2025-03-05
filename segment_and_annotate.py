@@ -39,7 +39,12 @@ def anotar_terminos(texto, terminos, etiqueta="TERMINO"):
             span = doc.char_span(start, end, label=etiqueta)  # Crear un Span
             if span is not None:
                 # Verificar si el span se superpone con alguna entidad ya existente
-                if not any(span.start < ent.end and span.end > ent.start for ent in nuevas_entidades):
+                superposicion = False
+                for ent in nuevas_entidades:
+                    if (span.start < ent.end and span.end > ent.start):  # Si hay superposición
+                        superposicion = True
+                        break
+                if not superposicion:
                     nuevas_entidades.append(span)
             start += 1  # Continuar buscando después de esta ocurrencia
 
